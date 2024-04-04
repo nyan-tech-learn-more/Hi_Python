@@ -34,4 +34,6 @@ print(my_dict['name']) #jack, 字典名稱[key]存取字典的值
 
 for x, y in my_dict.items(): #items()會回傳key, value
     print(f"{x} : {y}")
-
+#name : Jack
+#age : 26
+#gender : male
