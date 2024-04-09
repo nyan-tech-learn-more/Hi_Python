@@ -1,0 +1,29 @@
+#預設引數是為某些參數設置的預設值
+#呼叫函示時如果省略了該參數就會使用預設值
+#通過使用預設引|數可以使函式更有靈活性
+#減少參數傳入的數量
+
+def greet(name, greeting="Hello"): #default arg #預設引數要寫在後面
+      print(f"{greeting}, {name}!")
+greet("Bob") #Hello, Bob!
+greet("Bob", "Hi") #Hi, Bob! #替代預設引數，沒東西才會使用預設的
+#減少參數傳入數量
+
+
+#%% Function parameter and default argument values
+# 可給予一個或多個引數預設值，在呼叫函數時可以用幾種方式呼叫，如：
+# 只給必須參數
+# 給定必須參數及可選參數
+# 給定必須參數及所有可選參數
+# 可選參數如果沒有全部使用，則按照填入順序指派預設參數，來看看下面的範例:
+def hello_func(greeting, num = 2, name = 'You'):
+    print("{}, {}, {} Function.".format(greeting, num, name))
+
+hello_func('Hi')
+hello_func('Hi', 5)
+hello_func('Hi', 'HowHow')
+hello_func('Hi', 5, 'HowHow')
+# Hi, 2, You Function.
+# Hi, 5, You Function.
+# Hi, HowHow, You Function.
+# Hi, 5, HowHow Function.
