@@ -3,7 +3,6 @@
 email = "codeshiba@gmail.com"
 index = email.index("@") #@在第幾個存到index
 
-
 print(index) #9
 print(email[0:9]) #codeshiba
 print(email[0:index]) #codeshiba
